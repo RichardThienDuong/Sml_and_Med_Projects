@@ -1,0 +1,9 @@
+- takes in -c & -t or else random or default
+- once have secret code & attempts print "Will you find my secret code?"
+- If round > -t then end game and print lose game
+- print round then ask for user input
+- If wrong input then print "wrong input" then ask for input again
+- run input through secret code and count # of well placed pieces there are, If count = 4 then 
+- end game and print "Congratz You Did It!" else print count and continue
+- run input through secret code and count # of misplaced peices then print count and continue
+- back to step 3

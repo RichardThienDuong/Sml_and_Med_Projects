@@ -1,0 +1,49 @@
+.flex-bot {
+	display:flex;
+    flex-direction: column;
+    font-size: 30px;
+    text-align: center;
+}
+
+.flex-header {
+	background-color: #00B7EB;
+    padding: 10px;
+}
+
+.flex-hero {
+	background-color: #FF0000;
+    padding: 10px;
+}
+
+.flex-footer {
+	background-color: #444444;
+    padding: 10px;
+}
+
+
+/* Two box responsive */
+.flex-box {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-content {
+  background-color: #00FF00;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-sidebar {
+  background-color: #800080;
+  padding: 10px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-box {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html style='background-color: black'>
+    <div id="my_bouncing_box" style= "background-color: blue; border-radius: 3px;
+       position: absolute; left: 70px; top: 70px; min-width: 100px; min-height: 100px;
+        text-align: center; font-weight: bold; color: #999;" >duong_r</div>
+    <script type="text/javascript">
+      
+      var box = document.getElementById("my_bouncing_box");
+  
+      function my_bouncing_box() {
+              var x = 70;
+              var y = 70;
+              var move_x = 1;
+              var move_y = 1;
+              var id = setInterval(move, 10);
+  
+        function move() {
+          if (x == -2) {
+            clearInterval(id);
+          } else {
+              if (x < 0 || x > (window.innerWidth - 100)) {
+                move_x = -move_x;
+              };
+               if (y < 0 || y > (window.innerHeight - 100)) {
+                move_y = -move_y;
+              };
+              x += move_x;
+              y += move_y;
+            box.style.top = y + 'px';
+            box.style.left = x + 'px';
+          }
+        }
+  
+        }
+         
+       my_bouncing_box();
+    </script>
+  </html>

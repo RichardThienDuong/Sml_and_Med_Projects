@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="my_box_realtime" style= "background-color: dodgerblue; position: absolute; right: 70;
+     bottom: 70; min-width: 100px; min-height: 100px"></div>
+</body>
+<script type="text/javascript">
+
+        function my_move_box() {
+      var box = document.getElementById("my_box_realtime");
+            var pos = 70;
+            var id = setInterval(frame, 500);
+
+        function frame() {
+            if (pos==0) {
+             clearInterval(id);   
+            } else {
+                pos--;
+                box.style.bottom = pos + 'px';
+                box.style.right = pos + 'px';
+                }
+             }
+        }
+        my_move_box();
+        
+</script>
+</html>
+<!-- 
+    - move box to bottom 0 and right 0
+    - speed of vertical & Horizontal of 1 point every .5 seconds 
+    - loaded page should see box moving diagonally
+    - should take 35 seconds to reach end 
+ -->
